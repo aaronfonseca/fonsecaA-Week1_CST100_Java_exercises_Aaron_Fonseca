@@ -10,10 +10,10 @@ public class Exercise2_5 {
 	public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     System.out.println("Enter the subtotal and a gratuity rate: ");
-    int subtotal = s.nextInt();
-    double gratuity = s.nextInt();
-    gratuity = gratuity/10.0;
-    double sum = subtotal+gratuity;
+    double subtotal = s.nextDouble();
+    double gratuityRate = s.nextDouble();
+    double gratuity = subtotal * (gratuityRate / 100);
+    double sum = subtotal + gratuity;
     sum = Math.round(sum * 100) / 100.0; //Round to two decimals
     System.out.println("The gratuity is " + gratuity + " and total is $" + sum);
  }

@@ -9,7 +9,7 @@ public class Exercise1_11 {
 
 	public static void main(String[] args) {
 		int population = 312032486;
-		int seconds = 31536000;
+		int seconds = 31536000; // Second in year
 		int birth = 7;
 		int deaths = 13;
 		int immigrant = 45;
