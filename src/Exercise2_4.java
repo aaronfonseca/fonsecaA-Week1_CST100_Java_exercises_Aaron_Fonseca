@@ -10,8 +10,10 @@ public class Exercise2_4 {
    public static void main(String[] args) {
       Scanner input = new Scanner(System.in);
       System.out.print("Enter a number in pounds: ");
+      
       double pounds = input.nextDouble();
       double sum = pounds * 0.454;
+      
       sum = Math.round(sum * 100) / 100.0; //Round to two decimals
       System.out.println(pounds + " pounds is " + sum + " kilograms");
    }
